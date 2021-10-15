@@ -28,8 +28,8 @@ public class Main {
                     pricePerKg = getValueFromCon(in, "Input price/kg : ");
                     pricePerKm = getValueFromCon(in, "Input price/km: ");
                 } else {
-                    pricePerKg = getValueFromFile(weight,"/home/yauheni/Development/Project/Yauheni-Sivenka/resources/pricePerKg.csv");
-                    pricePerKm = getValueFromFile(distance,"/home/yauheni/Development/Project/Yauheni-Sivenka/resources/pricePerKm.csv");
+                    pricePerKg = getValueFromFile(weight,"./resources/pricePerKg.csv");
+                    pricePerKm = getValueFromFile(distance,"./resources/pricePerKm.csv");
                 }
                 res = !((weight.compareTo(BigDecimal.valueOf(0))<0) |
                         (pricePerKg.compareTo(BigDecimal.valueOf(0))<0) |
